@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #eee;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    height: 100%;
+}
+
+body.pk_stndln {
+    padding-bottom: 600px;
+    overflow: hidden;
+}
+
+.pk_stndln .pk_modal_back {
+    position: fixed;
+}
+
+/*html{
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%
+}*/
+
+body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(51, 56, 62) 0%, rgb(23, 25, 29) 100%);
+    /*background: #222436;*/
+    /*background: rgb(34, 36, 54);*/
+    /*overflow:hidden*/
+}
+
+button {
+    color: #040404;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    cursor: pointer;
+    color: #99c2c6;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    background-color: rgb(221, 221, 221);
+}
+
+select {
+    display: block;
+    padding: 0 10px;
+    border: 1px solid #999;
+    border-radius: 21px;
+    font-size: 12px;
+    height: 25px;
+    outline: 0;
+    background: transparent;
+    color: #eee;
+    line-height: 24px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+select option {
+    background: #333;
+    padding: 2px 0;
+    margin: 2px 0;
+}
+
+.pk_inpfile {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.pk_noselect {
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    user-select: none
+}

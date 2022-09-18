@@ -1,0 +1,69 @@
+.pk_zoombtn {
+    float: left;
+    /*height: 26px;*/
+    padding-right: 4px;
+    position: relative;
+}
+
+.pk_zoombtn button {
+    border-radius: 3px;
+    border: 1px solid #246e6e;
+    height: 18px;
+    margin-right: 6px;
+    padding: 0;
+    width: 26px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #246e6e;
+    background: #000;
+    font-size: 12px;
+    outline: 0;
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+
+.pk_zoombtn .pk_zoom_out_v,
+.pk_zoombtn .pk_zoom_in_v {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.pk_zoombtn .pk_zoom_in_v span,
+.pk_zoombtn .pk_zoom_out_v span {
+    margin-left: 40px;
+}
+
+.pk_zoombtn .pk_zoom_out_v {
+    top: -26px;
+}
+
+/*
+.pk_mob .pk_zoombtn{
+	display:none
+}*/
+
+.pk_mob .pk_zoom_in_v,
+.pk_mob .pk_zoom_out_v {
+    display: none
+}
+
+.icon-zoom-in:before {
+    content: "\e987";
+}
+
+.icon-zoom-out:before {
+    content: "\e988";
+}
+
+.icon-hammer:before {
+    content: "\e996";
+}
+
+.icon-first:before {
+    content: "\ea21";
+}
+
+.icon-last:before {
+    content: "\ea22";
+}

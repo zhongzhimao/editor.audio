@@ -1,0 +1,58 @@
+/*.app {*/
+/*    height: calc(100vh - 170px);*/
+/*    max-height: 40%;*/
+/*}*/
+
+article.about {
+    position: relative;
+    background: #0056ba;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 30px;
+    height: 180px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+article.about::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+article.about {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+article.about .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+article.about header h1 {
+    font-weight: normal;
+
+}
+
+article.about header p {
+    font-size: 14px;
+}
+
+article.about header h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+article.about header ul {
+    margin: 0;
+    /*padding: 0;*/
+}
+
+article.about header ul li {
+    margin: 8px 0;
+}
+
+article.about > p.description {
+
+}

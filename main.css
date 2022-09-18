@@ -1,0 +1,270 @@
+
+.pk_mob .pk_tb .pk_btn span {
+    visibility: hidden;
+    display: none;
+}
+
+.pk_mob .pk_tb .pk_btn:hover {
+    box-shadow: none;
+}
+
+/** ENDOF TOOLBAR **/
+
+
+/*.pk_mob .pk_av{
+	width:calc(100% - 28px);
+}*/
+/** ENDOF AUDIOVIEW **/
+
+
+
+/* if max height < ... hide vertical buttons and position to 0... */
+
+.pk_inact,
+.pk_app .pk_inact,
+.pk_btn.pk_inact {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/** 1up **/
+.pk_oneup {
+    margin: 0;
+    position: fixed;
+    z-index: 15;
+    transition: all 300ms ease-in-out;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.66);
+    color: #eee;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-size: 16px;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/** modal **/
+
+
+/*
+.pk_modal_a_top.pk_act:before{
+	content: '►';
+    text-decoration: none;
+    position: absolute;
+    margin: 3px 0 0px -10px;
+    font-size: 8px;
+}
+*/
+
+
+
+.pk_grabbing wave,
+.pk_grabbing {
+    cursor: move !important;
+    cursor: -webkit-grabbing !important;
+}
+
+.pk_av canvas {
+    opacity: 0;
+    transition: opacity 440ms;
+}
+
+/*.pk_dck {*/
+/*    position: relative;*/
+/*    display: none;*/
+/*}*/
+
+.pk_frqan {
+    border: 1px solid #444;
+    width: 380px;
+    margin: 15px 15px 12px 15px;
+    height: 110px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 7;
+    background: #111
+}
+
+label.pk_dis,
+.pk_pgeq_els.pk_dis .pk_gain {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.pk_pglst {
+    max-height: 160px;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+
+.pk_pglst::-webkit-scrollbar {
+    width: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pk_fnt10 .pk_modal_a_bottom {
+    font-size: 10px
+}
+
+.pk_tbs {
+    margin-left: -14px;
+    margin-right: -14px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.pk_tbsa {
+    width: 33.3%;
+    display: inline-block;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+    background: #303030;
+}
+
+.pk_tbsa:hover {
+    box-shadow: inset 0 -2px 6px #181818;
+}
+
+.pk_tbsa.pk_act {
+    box-shadow: none;
+    border-bottom: none;
+    background: transparent;
+    text-shadow: 0 0 1px #000
+}
+
+#pk_tmp_tap {
+    width: 100%;
+    background: #151515;
+    min-width: 500px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#pk_tmp_tap2 .pk_obj,
+#pk_tmp_tap .pk_obj {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(68, 18, 19, 0.75) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 100%);
+    border-left: 2px solid #f52b2b;
+    position: absolute;
+    top: 0;
+    transform: translate3d(100%, 0, 0);
+    left: -4px;
+    will-change: transform;
+    overflow: hidden;
+    transition: transform 3.3s linear;
+}
+
+#pk_tmp_tap2 .pk_obj {
+    transform: translate3d(50%, 0, 0);
+    transition: transform 1770ms linear;
+}
+
+#pk_tmp_tap .pk_obj2 {
+    width: 100px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    line-height: 30px;
+    margin-left: -50px;
+    text-align: center;
+    opacity: .6;
+    font-size: 16px;
+    transition: opacity 200ms;
+}
+
+#pk_tmp_tap3 {
+    width: 100%;
+    background: #333;
+    min-width: 500px;
+    min-height: 200px;
+    border: 1px solid #424242;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: background 70ms;
+}
+
+#pk_tmp_tap3:hover {
+    background: #363636;
+}
+
+#pk_tmp_tap3.pk_act {
+    background: #555;
+}
+
+.pk_id3ttl {
+    font-weight: bold;
+    padding: 2px 10px;
+    display: inline-block;
+    min-width: 64px;
+}
+
+.pk_lcla {
+    margin: 0 10px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.pk_lcla2 {
+    position: absolute;
+    left: 7px;
+    bottom: 16px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    font-size: 9px;
+    display: block;
+    padding: 1px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pk_lcla2.pk_act {
+    background: rgba(255, 255, 255, 0.74);
+    color: #111;
+}
+
+.pk_lcli {
+    max-width: 120px;
+    width: 120px;
+    vertical-align: middle;
+    height: 48px;
+    background: #111;
+}
+
+.pk_lcls {
+    min-width: 74px;
+    width: 25%;
+    margin-bottom: 6px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.pk_aut_act,
+.pk_aut {
+    box-shadow: 0px 0px 20px #eee, inset 0px 0px 4px gold;
+}
